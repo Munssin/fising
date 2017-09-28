@@ -1,0 +1,35 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.3s all ease;
+  font-family: 'Lato', sans-serif; }
+
+.container {
+  max-width: 1700px;
+  position: relative; }
+
+.row {
+  padding: 0; }
+
+a {
+  transition: 0.3s all ease; }
+
+h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 48px;
+  font-weight: bold; }
+
+h2 {
+  text-align: center;
+  color: #434f5b;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+ul {
+  margin: 0;
+  list-style: none;
+  -webkit-padding-start: 0; }

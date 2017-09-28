@@ -1,0 +1,100 @@
+#baners{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  .ban-item{
+    position: relative;
+    width: 389px;
+    height: 376px;
+    margin: 0 1px;
+    overflow: hidden;
+    text-align: center;
+    transition: .3s ease-in-out;
+    .fish{
+        position: absolute;
+        font-size: 14px;
+        color: #fff;
+        left: 43%;
+        bottom: 194px;
+        transform: translateY(-200px);
+        transition: .3s ease-in-out;
+    }
+    .reg{
+      position: absolute;
+      font-size: 24px;
+      color: #fff;
+      left: 36%;
+      bottom: 158px;
+      opacity: 0;
+      text-transform: uppercase;
+      transition: .3s ease-in-out;
+    }
+    a{
+      position: absolute;
+      font-size: 14px;
+      color: #fff;
+      padding: 12px 38px;
+      border: 1px solid #fff;
+      text-transform: uppercase;
+      cursor: pointer;
+      z-index: 9;
+      text-decoration: none;
+      left: 32%;
+      bottom: 92px;
+      transform: translateY(200px);
+      transition: .3s ease-in-out;
+    }
+    .overlay{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      z-index: 1;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      background-color: rgba(127, 127, 127, 0.5);
+    }
+  }
+  @media(max-width: 1200px){
+    .ban-item{
+      width: 315px;
+      height: 340px;
+    }
+  }
+  @media(max-width: 1024px){
+    .ban-item{
+      margin: 20px auto;
+    }
+  }
+  @media(max-width: 569px){
+    .ban-item{
+      width: 280px;
+      height: 320px;
+    }
+  }
+  .ban-item:hover{
+        background-color: #215b55;
+  }
+  .ban-item:hover .overlay{
+    opacity: 1;
+  }
+  .ban-item:hover .fish{
+    transform: translateY(0);
+  }
+  .ban-item:hover .reg{
+    opacity: 1;
+  }
+  .ban-item:hover .fish-but{
+    transform: translateY(0);
+  }
+  .ban-item-1{
+    background-image: url(../img/ban-it1.png);
+  }
+  .ban-item-2{
+    background-image: url(../img/ban-it3.png);
+  }
+  .ban-item-3{
+    background-image: url(../img/ban-it1.png);
+  }
+}

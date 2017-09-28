@@ -1,0 +1,78 @@
+#how{
+  margin-bottom: 0;
+  position: relative;
+  h2{
+    padding-bottom: 60px;
+  }
+  .how-item{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    z-index: 9;
+    img{
+      width: 85px;
+      height: 85px;
+    }
+    h3{
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+      color: #434f5b;
+      margin-top: 56px;
+      margin-bottom: 36px;
+    }
+    p{
+      color: #babcbd;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  .howln{
+    background-image: url(../img/howln.png);
+    background-repeat: no-repeat;
+    width: 843px;
+    height: 11px;
+    position: absolute;
+    right: 90px;
+    top: 33px;
+    z-index: 5;
+  }
+  .howf{
+    background-image: url(../img/howf.png);
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 44px;
+    position: absolute;
+    right: 36px;
+    top: 22px;
+    z-index: 5;
+  }
+  .fishh{
+    text-transform: uppercase;
+    color: #03a9f5;
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    right: 0;
+    top: 0;
+  }
+  .sea{
+    position: absolute;
+    background-image: url(../img/howbg.png);
+    height: 249px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 134px;
+  }
+}
+@media (max-width: 1024px) {
+  #how{
+    .sea, .howln, .howf, .fishh{
+      display: none;
+    }
+  }
+}

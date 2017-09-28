@@ -1,0 +1,29 @@
+#search{
+  background-image: url(../img/search-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 481px;
+  form{
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    input{
+      width: 400px;
+      height: 42px;
+      padding: 0 15px;
+    }
+    button{
+      width: 170px;
+      height: 42px;
+      background-color: #2dca73;
+      border: none;
+      text-transform: uppercase;
+      color: #fff;
+      transition: 0.3s all ease;
+    }
+    button:hover{
+      background-color: #75ffb3;
+    }
+  }
+}

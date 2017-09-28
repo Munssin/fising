@@ -1,0 +1,108 @@
+#prod{
+  margin-top: 80px;
+  h2{
+    margin-bottom: 55px;
+  }
+  .slider{
+    .slick-dots{
+      display: none !important;
+    }
+    .slick-prev{
+      position: absolute;
+      right: 50px;
+      z-index: 99;
+    }
+    .slick-next{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    @media(max-width:569px){
+      .slick-prev{
+        top: -35px;
+      }
+      .slick-next{
+        top: -35px;
+      }
+    }
+    .slider-item{
+      margin-bottom: 40px;
+      display: flex !important;
+      .foto{
+        margin-right: 30px;
+        img{
+          width: 195px;
+          height: 225px;
+        }
+      }
+      .item-info{
+        padding-top: 10px;
+        .rating {
+          margin-top: 18px;
+          display: inline-block;
+           input {
+              display: none;
+            }
+           label:before {
+            margin-right: 2px;
+            font-size: 1.25em;
+            font-family: FontAwesome;
+            display: inline-block;
+            content: "\f005";
+          }
+          .half:before {
+            content: "\f089";
+            position: absolute;
+          }
+          label {
+            color: #bbbbbb;
+           float: right;
+          }
+        }
+        .rating > input:checked ~ label,
+        .rating:not(:checked) > label:hover,
+        .rating:not(:checked) > label:hover ~ label {
+           color: #ffaa00;
+         }
+
+        .rating > input:checked + label:hover,
+        .rating > input:checked ~ label:hover,
+        .rating > label:hover ~ input:checked ~ label,
+        .rating > input:checked ~ label:hover ~ label {
+           color: #ffaa00;
+         }
+         .top-item-name{
+           font-size: 14px;
+           color: #434f5b;
+           text-align: left;
+         }
+         .top-price{
+           font-size: 14px;
+           color: #434f5b;
+           text-align: left;
+           margin-bottom: 40px;
+         }
+         .link-sl{
+           a{
+             text-decoration: none;
+             padding: 10px;
+             font-size: 12px;
+             color: #babcbd;
+             border: 1px solid #babcbd;
+           }
+         }
+      }
+    }
+    @media(max-width:569px){
+      .slider-item{
+        flex-direction: column;
+        .foto{
+          margin: 0 auto;
+        }
+        .item-info{
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
