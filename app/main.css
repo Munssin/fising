@@ -1,8 +1,14 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 header .top-head {
   padding: 25px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 12px;
   color: #b2b2b2;
@@ -31,8 +37,14 @@ header .bot-head {
   width: 100%; }
   header .bot-head nav ul {
     padding: 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
     header .bot-head nav ul li {
       padding-left: 55px; }
@@ -50,6 +62,7 @@ header .bot-head {
     header .top-head .my-cart:before {
       content: url(""); }
   header .bot-head nav ul {
+    -ms-flex-pack: distribute;
     justify-content: space-around; }
     header .bot-head nav ul li {
       padding-left: 0; } }
@@ -64,6 +77,7 @@ header .bot-head {
     margin: 0 1px;
     overflow: hidden;
     text-align: center;
+    -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out; }
     #baners .ban-item .fish {
       position: absolute;
@@ -71,7 +85,9 @@ header .bot-head {
       color: #fff;
       left: 43%;
       bottom: 194px;
+      -webkit-transform: translateY(-200px);
       transform: translateY(-200px);
+      -webkit-transition: .3s ease-in-out;
       transition: .3s ease-in-out; }
     #baners .ban-item .reg {
       position: absolute;
@@ -81,6 +97,7 @@ header .bot-head {
       bottom: 158px;
       opacity: 0;
       text-transform: uppercase;
+      -webkit-transition: .3s ease-in-out;
       transition: .3s ease-in-out; }
     #baners .ban-item a {
       position: absolute;
@@ -94,7 +111,9 @@ header .bot-head {
       text-decoration: none;
       left: 32%;
       bottom: 92px;
+      -webkit-transform: translateY(200px);
       transform: translateY(200px);
+      -webkit-transition: .3s ease-in-out;
       transition: .3s ease-in-out; }
     #baners .ban-item .overlay {
       position: absolute;
@@ -123,10 +142,12 @@ header .bot-head {
   #baners .ban-item:hover .overlay {
     opacity: 1; }
   #baners .ban-item:hover .fish {
+    -webkit-transform: translateY(0);
     transform: translateY(0); }
   #baners .ban-item:hover .reg {
     opacity: 1; }
   #baners .ban-item:hover .fish-but {
+    -webkit-transform: translateY(0);
     transform: translateY(0); }
   #baners .ban-item-1 {
     background-image: url(../img/ban-it1.png); }
@@ -159,7 +180,12 @@ footer {
       width: 200px;
       height: 65px; } }
   footer .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     line-height: 25px;
     font-size: 14px;
@@ -179,6 +205,7 @@ footer {
     footer .foot-info ul li a {
       font-size: 14px;
       color: #babcbd;
+      -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     footer .foot-info ul li a:hover {
       color: #03a9f5; }
@@ -200,7 +227,11 @@ footer {
   background-size: cover;
   height: 481px; }
   #search form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-top: 120px; }
     #search form input {
@@ -214,6 +245,7 @@ footer {
       border: none;
       text-transform: uppercase;
       color: #fff;
+      -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     #search form button:hover {
       background-color: #75ffb3; }
@@ -225,7 +257,11 @@ footer {
   margin-top: 35px;
   margin-bottom: 40px; }
   #top .sort-top ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center; }
     #top .sort-top ul li {
       padding: 7px 15px;
@@ -240,13 +276,17 @@ footer {
       background-color: #03a9f5; }
 
 #top .item-top .top-item {
+  -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease; }
   #top .item-top .top-item img {
     width: 270px;
     height: 300px;
+    -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease; }
   #top .item-top .top-item img:hover {
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.3); }
   #top .item-top .top-item .rating {
     margin-top: 18px;
@@ -297,9 +337,16 @@ footer {
   #how .how-item {
     position: relative;
     z-index: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     /* justify-content: center; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     z-index: 9; }
     #how .how-item img {
@@ -376,6 +423,8 @@ footer {
       top: -35px; } }
   #prod .slider .slider-item {
     margin-bottom: 40px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important; }
     #prod .slider .slider-item .foto {
       margin-right: 30px; }
@@ -427,6 +476,9 @@ footer {
         border: 1px solid #babcbd; }
   @media (max-width: 569px) {
     #prod .slider .slider-item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column; }
       #prod .slider .slider-item .foto {
         margin: 0 auto; }
@@ -438,6 +490,7 @@ html, body {
   padding: 0;
   background-color: #fff;
   overflow-x: hidden;
+  -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
   font-family: 'Lato', sans-serif; }
 
@@ -449,6 +502,7 @@ html, body {
   padding: 0; }
 
 a {
+  -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease; }
 
 h1 {

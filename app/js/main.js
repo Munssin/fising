@@ -41,8 +41,20 @@ $('.slider').slick({
   ]
 });
 
-$("#1, #m1").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#features").offset().top
-    }, 2000);
+$(".datec").click(function() {
+    $(".top-item").css('display', 'block');
+		$( this ).addClass("active");
+		$(".topr, .mostr").removeClass("active");
+});
+$(".topr").click(function() {
+		$( this ).addClass("active");
+		$(".datec, .mostr").removeClass("active");
+    $(".top-item1").css('display', 'none');
+		$(".top-item2").css('display', 'block');
+});
+$(".mostr").click(function() {
+		$( this ).addClass("active");
+		$(".datec, .topr").removeClass("active");
+    $(".top-item2, top-item1").css('display', 'none');
+		$(".top-item3").css('display', 'block');
 });
